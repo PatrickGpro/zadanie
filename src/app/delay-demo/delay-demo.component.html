@@ -1,0 +1,8 @@
+<div>
+    <button (click)="showDelayedMessage()">Ping Server</button>
+    <div *ngIf="isLoading">Loading...</div>
+    <div *ngIf="!isLoading && delayedMessage">
+      {{ delayedMessage }}
+    </div>
+  </div>
+  
